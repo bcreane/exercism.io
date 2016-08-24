@@ -7,7 +7,6 @@ BOOST_AUTO_TEST_CASE(scores_an_empty_word_as_zero)
     BOOST_REQUIRE_EQUAL(0, scrabble_score::score(""));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 BOOST_AUTO_TEST_CASE(scores_a_very_short_word)
 {
     BOOST_REQUIRE_EQUAL(1, scrabble_score::score("a"));
@@ -32,4 +31,3 @@ BOOST_AUTO_TEST_CASE(scores_z_word)
 {
     BOOST_REQUIRE_EQUAL(12, scrabble_score::score("zoo"));
 }
-#endif
