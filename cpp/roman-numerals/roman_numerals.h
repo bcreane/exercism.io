@@ -40,6 +40,10 @@ namespace {
 
 namespace roman {
     string convert(int i) {
+        if (i > 3999) {
+            throw std::domain_error("can't handle bigger than 3999!");
+        }
+
         string r;
         size_t ndx(0);
         while (i > 0) {

@@ -101,3 +101,8 @@ BOOST_AUTO_TEST_CASE(three_thousand_yields_MMM)
 {
     BOOST_REQUIRE_EQUAL("MMM", roman::convert(3000));
 }
+
+BOOST_AUTO_TEST_CASE(three_thousand_nine_hundred_ninty_nine_yields_MMMCMXCIX)
+{
+    BOOST_REQUIRE_EQUAL("MMMCMXCIX", roman::convert(3999));
+}
