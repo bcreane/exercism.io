@@ -106,3 +106,19 @@ BOOST_AUTO_TEST_CASE(three_thousand_nine_hundred_ninty_nine_yields_MMMCMXCIX)
 {
     BOOST_REQUIRE_EQUAL("MMMCMXCIX", roman::convert(3999));
 }
+
+BOOST_AUTO_TEST_CASE(four_thousand_nine_hundred_ninty_nine_yields_MMMMCMXCIX)
+{
+    BOOST_REQUIRE_EQUAL("MMMMCMXCIX", roman::convert(4999));
+}
+
+BOOST_AUTO_TEST_CASE(six_thousand_yields_MMMMMM)
+{
+    BOOST_REQUIRE_EQUAL("MMMMMM", roman::convert(6000));
+}
+
+BOOST_AUTO_TEST_CASE(nine_thousand_nine_hundred_ninty_nine_yields_MMMMMMMMMCMXCIX)
+{
+    BOOST_REQUIRE_EQUAL("MMMMMMMMMCMXCIX", roman::convert(9999));
+}
+
