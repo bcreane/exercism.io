@@ -1,3 +1,4 @@
+#include <ios>
 #include <boost/test/tools/detail/print_helper.hpp>
 
 namespace boost {
@@ -14,7 +15,7 @@ namespace boost {
 
     template<class F, class S> inline
     ::std::ostream & operator<<(::std::ostream & os, ::std::pair<F, S> const & p) {
-    os << "([" << p.first << "], [" << p.second << "])";
+    //os << "([" << p.first << "], [" << p.second << "])";
     return os;
     }
 }
